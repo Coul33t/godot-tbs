@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnc00qvnw81jq"]
+
+[ext_resource type="Texture2D" uid="uid://ct844ln2yg7w8" path="res://sprites/testing/red.png" id="1_lehbx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dff6o"]
+atlas = ExtResource("1_lehbx")
+region = Rect2(28, 4, 24, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oknw6"]
+atlas = ExtResource("1_lehbx")
+region = Rect2(52, 4, 24, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3hrj"]
+atlas = ExtResource("1_lehbx")
+region = Rect2(76, 4, 24, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3smg2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dff6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oknw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3hrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oknw6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Red" type="AnimatedSprite2D"]
+position = Vector2(124, -65)
+sprite_frames = SubResource("SpriteFrames_3smg2")
+frame = 1
+frame_progress = 0.768655
+offset = Vector2(0, -8)

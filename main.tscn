@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c77hg6qqyh703"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_02yon"]
+[ext_resource type="PackedScene" uid="uid://bb7am7vmkt1qo" path="res://tiles.tscn" id="2_vu3ln"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-5, 5)
+script = ExtResource("1_02yon")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(190, 72)
+zoom = Vector2(1.5, 1.5)
+
+[node name="Tiles" parent="." instance=ExtResource("2_vu3ln")]

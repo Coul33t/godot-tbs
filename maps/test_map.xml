@@ -1,0 +1,22 @@
+<map>
+    <tile>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <type>grass</type>
+    </tile>
+
+    <tile>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+        <type>grass</type>
+    </tile>
+
+    <tile>
+        <x>0</x>
+        <y>2</y>
+        <z>0</z>
+        <type>grass</type>
+    </tile>
+</map>

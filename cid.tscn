@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://071w5if38nbw"]
+
+[ext_resource type="Texture2D" uid="uid://cnn4qjhco5tn6" path="res://sprites/testing/cid.png" id="1_n7vwp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nl2p"]
+atlas = ExtResource("1_n7vwp")
+region = Rect2(134, 2, 31, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlq7m"]
+atlas = ExtResource("1_n7vwp")
+region = Rect2(35, 2, 31, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0r1h3"]
+atlas = ExtResource("1_n7vwp")
+region = Rect2(167, 2, 31, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2gsn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nl2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlq7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r1h3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mlq7m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Cid" type="AnimatedSprite2D"]
+z_index = 999
+y_sort_enabled = true
+position = Vector2(160, 2)
+sprite_frames = SubResource("SpriteFrames_m2gsn")
+frame = 3
+frame_progress = 0.546664
